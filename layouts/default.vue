@@ -4,17 +4,18 @@
     
     <!--Header -->
      
-    <v-app-bar color="red" dark fixed app>
-      <v-toolbar-title>Application</v-toolbar-title>
+    <v-app-bar color="purple" dark fixed app>
+          <v-toolbar-title>Nanavati</v-toolbar-title>
        <!-- Component Example -->
-      <VuetifyLogo/> 
+             <NanavatiLogo/> 
+             <Tab/>
     
          </v-app-bar>
 
     <!-- Body -->
     <v-content light>
       <nuxt /> 
-      <Tab/>
+      
     </v-content>
     
     <!-- Footer -->
@@ -36,5 +37,6 @@ export default {}
 
    #inspire {
     background-color: white;
+    colour: black;
   }
 </style>

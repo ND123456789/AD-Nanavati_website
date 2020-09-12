@@ -1,9 +1,8 @@
 <template>
   <div>
     <v-content>
-      It Worked!
-      <caraousel/>
-    </v-content>
+      It Worked! yaay. It did work..
+          </v-content>
   </div>
 </template>
 
