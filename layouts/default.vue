@@ -14,7 +14,7 @@
 
     <!-- Body -->
     <v-content light>
-      <nuxt /> 
+          <nuxt /> 
       
     </v-content>
     
