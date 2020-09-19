@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center">
-    <v-dialog v-model="dialog" persistent max-width="290"> //here persistent is responsible for not letting the dialog box close even if the user clicks outside
+    <v-dialog v-model="dialog" persistent max-width="290"> 
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           color="primary"

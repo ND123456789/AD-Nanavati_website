@@ -1,10 +1,10 @@
 <template>
   <v-card
-    max-width="400"
+    max-width="800"
     class="mx-auto"
   >
     <v-system-bar
-      color="pink darken-2"
+      color="dark blue"
       dark
     >
       <v-spacer></v-spacer>
@@ -14,11 +14,12 @@
       <v-icon>mdi-window-maximize</v-icon>
 
       <v-icon>mdi-close</v-icon>
+  
     </v-system-bar>
 
     <v-app-bar
       dark
-      color="pink"
+      color="blue"
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
@@ -35,7 +36,7 @@
       <v-row dense>
         <v-col cols="12">
           <v-card
-            color="#385F73"
+            color="#385F30"
             dark
           >
             <v-card-title class="headline">Unlimited music now</v-card-title>
@@ -69,7 +70,7 @@
 
               <v-avatar
                 class="ma-3"
-                size="125"
+                size="200"
                 tile
               >
                 <v-img :src="item.src"></v-img>
@@ -98,6 +99,19 @@
           title: 'Halcyon Days',
           artist: 'Ellie Goulding',
         },
+
+
+        {  color: '#952500',
+          src: 'https://cdn.vuetifyjs.com/images/cards/halcyon.png',
+          title: 'Bailando',
+          artist: 'Enrique Iglesias',
+        },
+
+        {  color: '#957502',
+          src: 'https://cdn.vuetifyjs.com/images/cards/halcyon.png',
+          title: 'Raag Manj Khamaj',
+          artist: 'Anoushka Shankar',
+        }
       ],
     }),
   }

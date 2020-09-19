@@ -1,12 +1,12 @@
 <template>
   <div>
     <v-content>
-     
+      It Worked! Yes It did Great
       <v-container>
         <v-row justify="center">
           <h1>How to stir fry chicken</h1>
         </v-row>
-        <loadingcard/>
+        <Horizontalcards/>
       </v-container>
     </v-content>
   </div>

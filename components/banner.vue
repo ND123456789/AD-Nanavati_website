@@ -1,12 +1,11 @@
 <template>
   <div>
     <v-content>
-     
       <v-container>
-        <v-row justify="center">
-          <h1>How to stir fry chicken</h1>
+        <v-row justify="left">
+          <h2>Emergency Services</h2>
         </v-row>
-        <loadingcard/>
+        <Grids/>
       </v-container>
     </v-content>
   </div>
