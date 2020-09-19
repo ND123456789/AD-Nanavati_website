@@ -10,7 +10,7 @@
       flat
       hide-no-data
       hide-details
-      label="Enter your location?"
+      label="What is the patient suffering through?"
       solo-inverted
       auto-select-first
     ></v-autocomplete>

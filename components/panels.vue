@@ -23,19 +23,17 @@
               <v-expansion-panel-content>
                <h4> ICU rooms not available</h4>
                 <Autocomplete/>
+                <List/>
               </v-expansion-panel-content>
             </v-expansion-panel>
 
-            <v-spacer></v-spacer>
-
             <v-expansion-panel>
-                <v-expansion-panel-header><h2>Ambulance</h2></v-expansion-panel-header>
+                <v-expansion-panel-header><h2>Nanavati Ambulance Number</h2></v-expansion-panel-header>
                 <v-expansion-panel-content>
                 <v-btn large color="green">Call now</v-btn>
+                +91 9890834091
                 </v-expansion-panel-content>
               </v-expansion-panel>
-
-              <v-spacer></v-spacer>
 
             <v-expansion-panel>
               <v-expansion-panel-header><h2>Do this in emergency</h2></v-expansion-panel-header>
@@ -56,19 +54,37 @@
               max-width="344"
               light
               single
-              outlined
+              raised
               >
               <v-list-item three-line>
                 <v-list-item-content>
-                  <v-list-item-title class="headline mb-1">Instant Doctor</v-list-item-title>
+                  <v-list-item-title class="headline mb-1"><b>Instant Doctor</b></v-list-item-title>
                   <v-list-item-subtitle>+91 937174902</v-list-item-subtitle>
                 </v-list-item-content>
 
                   <v-icon x-large color="purple darken-2">mdi-dialpad</v-icon>
-               </v-list-item>
+              </v-list-item>
 
                 <v-card-actions>
                   <v-btn large color="green">Call now</v-btn>
+                </v-card-actions>
+          </v-card>
+          <br></br>
+          <v-card 
+              class="mx-auto"
+              max-width="344"
+              light
+              single
+              outlined
+              >
+              <v-list-item two-line>
+                <v-list-item-content>
+                  <v-list-item-title class="headline mb-1"><h5>Helpline</h5></v-list-item-title>
+                  <v-list-item-subtitle><h5>+91 937174902</h5></v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+              <v-card-actions>
+                  <v-btn text large color="green">Call now</v-btn>
                 </v-card-actions>
           </v-card>
         </v-col>

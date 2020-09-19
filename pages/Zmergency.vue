@@ -2,18 +2,22 @@
   <div>
     <v-content>
       <Breadcrumbs/>
-      <v-container>
-        <v-row>
-          <v-col 
-            cols="12"
-            sm="4"
-            md="6"
-            >
-            <v-icon text color="black">Emergency Services</v-icon> 
-          </v-col>
-        </v-row>
+      <v-card color="light grey">
+      <v-container fluid class="pa-13">
+          <v-row>
+            <v-col 
+              cols="12"
+              sm="4"
+              md="6"
+              >
+              <h1>Emergency Services</h1>
+            </v-col>
+          </v-row>
+        
       </v-container>
-      <icubeds/>
+      </v-card>
+      <panels/>
+      
       
       
      
