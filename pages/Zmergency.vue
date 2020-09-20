@@ -16,11 +16,7 @@
         
       </v-container>
       </v-card>
-      <panels/>
-      
-      
-      
-     
+      <panels/>     
     </v-content>
   </div>
 </template>

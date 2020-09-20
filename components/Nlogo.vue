@@ -2,13 +2,13 @@
   <img
     class="VuetifyLogo"
     alt="Vuetify Logo"
-    src="Nanavati_Hospital_logo.png"
+    src="Logo.png"
   >
 </template>
 
 <style>
 .VuetifyLogo {
   height: 50px;
-  width: 50px;
+  width: 40px;
 }
 </style>

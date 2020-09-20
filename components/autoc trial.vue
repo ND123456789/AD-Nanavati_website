@@ -1,7 +1,7 @@
 <template>
         <v-autocomplete
           v-model="select"
-          :items="items"
+          :items="borivali" 
           :search-input.sync="search"
           cache-items
           class="mx-4"
@@ -13,7 +13,7 @@
           label="Enter your location to find nearest hospital"
           solo-inverted
         ></v-autocomplete>
-</template>
+  </template>
           
 
 <script>
@@ -21,23 +21,22 @@
     data () {
       return {
         loading: false,
-        items: [],
-        search: null,
         select: null,
-        states: [
-          'Borivali east- Apex Multi-speciality hospitals',
-          'Borivali east- Lotus Multi-speciality hospitals',
-          'Borivali west- Karuna Hospital',
-          'Malad- Surana hospital and research center',
-          'Malad- Thunga hospital',
-          'Dahisar- Pinnacle hospital',
-          'Dahisar- Pragati Multi-speciality hospital',
-          'Goregaon- Kapadia Multispeciality Hospital',
-          'Goregaon- Vishwa Kripa Hospital',
-          'Andheri- Critical Care Hospital',
-          'Andheri- Mukund Hospital',
-          
+        search: null,
+        // items: 
+      
+          borivali: [
+          "Apex hospitals",
+          "Karuna Hospital",
         ],
+    
+        // {
+        //   Malad: [
+        //   "National hospital",
+        //   "Malad hospital",
+        // ],
+        // }
+
       }
     },
     watch: {

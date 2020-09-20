@@ -1,35 +1,24 @@
 <template>
   <v-card>
-    <v-toolbar
+  
+     <v-toolbar
       color="purple"
       black = "false"
       flat
+      right
       >
-          
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-      <v-row>
-        <v-col
-            <v-col
-              cols="9"
-              sm="8"
-            >
-            
-            Nanavati
-
-        </v-col>
-      </v-row>
-
+      <Nlogo/><br>
+      <h3>Nanavati Hospital</h3>
       <v-spacer></v-spacer>
-
-      <v-tab>Book an Appointment</v-tab>
+      <v-btn class='ma-2'depressed small light>Book appointment</v-btn>
      
-      <v-tab>Quick enquiry</v-tab>
-
-       <v-divider vertical></v-divider>
-       <h6>Patient Portal</h6>
-       <v-btn class="ma-2" tile color="purple" purple>Login</v-btn>
-       <v-btn class="ma-2" outlined color="white">Outlined Button</v-btn>
+      <v-btn class='ma-2'depressed small light>Quick Enquiry</v-btn>
+    <br>
+      <v-divider vertical> </v-divider>
+      <h6> Pateint portal</h6>
+       <v-btn class="ma-2" x-small tile color="purple" purple>Login</v-btn>
+       <v-btn class="ma-2" x-small outlined color="white">Register</v-btn>
+      
       
       <template v-slot:extension>
         <v-tabs
@@ -39,7 +28,7 @@
           <v-tabs-slider color="white"></v-tabs-slider>
 
           <v-spacer></v-spacer>
-          <v-tab v-for="item in items" :key="item">
+          <v-tab show-arrows v-for="item in items" :key="item">
             {{ item }}
             <v-tab-item
         
@@ -55,9 +44,7 @@
           </v-tabs>
       </template>
     </v-toolbar>
-
-        
-      </v-tab-item>
+    </v-tab-item>
     </v-tabs-items>
   </v-card>
 </template>
