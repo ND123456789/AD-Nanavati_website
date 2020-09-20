@@ -11,13 +11,12 @@
       <h3>Nanavati Hospital</h3>
       <v-spacer></v-spacer>
       <v-btn class='ma-2'depressed small light>Book appointment</v-btn>
-     
-      <v-btn class='ma-2'depressed small light>Quick Enquiry</v-btn>
+      <v-btn class='ma-2'depressed small color="green">Quick Enquiry</v-btn>
     <br>
       <v-divider vertical> </v-divider>
-      <h6> Pateint portal</h6>
+      <h6> Patient portal</h6>
        <v-btn class="ma-2" x-small tile color="purple" purple>Login</v-btn>
-       <v-btn class="ma-2" x-small outlined color="white">Register</v-btn>
+       <v-btn class="ma-2" x-small color="green">Register</v-btn>
       
       
       <template v-slot:extension>
