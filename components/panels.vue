@@ -2,7 +2,7 @@
   <div>
     <div class="d-flex">
     </div>
-    <v-container fluid class="pa-3">
+    <v-container fluid class="pa-3"> <!--padding pa!-->
       <v-row>
         <v-col
           cols="12"
@@ -17,7 +17,7 @@
             single
             >
 
-            <v-expansion-panel>
+            <v-expansion-panel> <!--panel for ICU beds!-->
               <v-expansion-panel-header><h2>ICU Beds</h2></v-expansion-panel-header>
               <v-expansion-panel-content>
                <h3> ICU rooms not available</h3>
@@ -25,7 +25,7 @@
               </v-expansion-panel-content>
             </v-expansion-panel>
         
-            <v-expansion-panel>
+            <v-expansion-panel> <!--panel for Nanavati ambulance!-->
                 <v-expansion-panel-header><h2>Nanavati Ambulance Number</h2></v-expansion-panel-header>
                 <v-expansion-panel-content>
                 <v-btn large color="green">Call now</v-btn>
@@ -33,12 +33,12 @@
                 </v-expansion-panel-content>
               </v-expansion-panel>
 
-            <v-expansion-panel>
+            <v-expansion-panel> <!--panel for do this in emeergency!-->
               <v-expansion-panel-header><h2>Do this in emergency</h2></v-expansion-panel-header>
               <v-expansion-panel-content>
               <br> </br>
                <!--<Autocomplete2/>!-->
-               <dothis/>
+               <dothis/> <!--the tabs component!-->
               </v-expansion-panel-content>
             </v-expansion-panel>
 
@@ -48,7 +48,7 @@
           cols="12"
           md="4"
           sm="1"
-          >
+          > <!--A separte column for instant doc and helplie number!-->
           <v-card
             class="mx-auto"
             max-width="280"
@@ -56,8 +56,8 @@
             single
             raised
             >
-            <v-list-item three-line>
-              <v-list-item-content>
+            <v-list-item three-line> 
+              <v-list-item-content> <!--Card for instant doctor!-->
                 <v-list-item-title class="headline mb-1"><b>Instant Doctor</b></v-list-item-title>
                 <v-list-item-subtitle>+91 937174902</v-list-item-subtitle>
               </v-list-item-content>
@@ -77,7 +77,7 @@
               outlined
               >
               <v-list-item two-line>
-                <v-list-item-content>
+                <v-list-item-content> <!--card for helpline!-->
                   <v-list-item-title class="headline mb-1"><h5>Helpline</h5></v-list-item-title>
                   <v-list-item-subtitle><h5>+91 937174902</h5></v-list-item-subtitle>
                 </v-list-item-content>

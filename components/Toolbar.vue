@@ -1,4 +1,4 @@
-<template>
+<template> <!--The code for global navigation!-->
   <v-card>
   
      <v-toolbar
@@ -7,19 +7,19 @@
       flat
       right
       >
-      <Nlogo/><br>
-      <h3>Nanavati Hospital</h3>
+      <Nlogo/><br> <!--The logo on the left!-->
+      <h3>Nanavati Hospital</h3> <!--the text 'Nanavati Hospital' after it!-->
       <v-spacer></v-spacer>
-      <v-btn class='ma-2'depressed small light>Book appointment</v-btn>
-      <v-btn class='ma-2'depressed small color="green">Quick Enquiry</v-btn>
-    <br>
-      <v-divider vertical> </v-divider>
+      <v-btn class='ma-2'depressed small light>Book appointment</v-btn> <!--Button for book an appointment!-->
+      <v-btn class='ma-2'depressed small color="green">Quick Enquiry</v-btn> <!--Button for quick enquiry!-->
+      <br>
+      <v-divider vertical> </v-divider> 
       <h6> Patient portal</h6>
-       <v-btn class="ma-2" x-small tile color="purple" purple>Login</v-btn>
-       <v-btn class="ma-2" x-small color="green">Register</v-btn>
+       <v-btn class="ma-2" x-small tile color="purple" purple>Login</v-btn> <!--Button for login!-->
+       <v-btn class="ma-2" x-small color="green">Register</v-btn> <!--Button for register!-->
       
       
-      <template v-slot:extension>
+      <template v-slot:extension> <!--Code for the tabs below(2nd line)!-->
         <v-tabs
           v-model="tab"
           align-with-title
@@ -31,7 +31,7 @@
             {{ item }}
             <v-tab-item
         
-          </v-tab>
+          </v-tab> <!--The search text field code!-->
             <v-text-field
               append-icon="mdi-magnify"
               class="mx-4"

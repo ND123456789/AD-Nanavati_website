@@ -3,7 +3,7 @@
     <v-toolbar flat color="white" light>
       <v-toolbar-title><h5>What is the patient suffering through?</h5></v-toolbar-title>
     </v-toolbar>
-    
+    <!--The tabs for 'do this panel!-->
     <v-tabs 
       vertical color="grey"
       show-arrows>
