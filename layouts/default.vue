@@ -8,7 +8,7 @@
           <v-toolbar-title>Nanavati</v-toolbar-title>
        <!-- Component Example -->
                 
-                  <Toolbar/>
+                  <Toolbarica2/>
                   
                   
                
@@ -30,7 +30,7 @@
         <v-row>
           <v-col
             cols="12"
-            sm="4"
+            sm="6"
             md="6"
             >
             <h3>Quick Links</h3>
@@ -46,7 +46,7 @@
 
           <v-col
             cols="12"
-            sm="4"
+            sm="6"
             md="6">
             <h3>Stay in touch</h3>
             <v-divider></v-divider>

@@ -7,6 +7,7 @@ md="4"
 sm="4"
 lg="4"
 >
+
   <v-card
     class="pa-md-4 pa-sm-2 ma-sm-2 ma-md-1"
     color="red lighten-2"

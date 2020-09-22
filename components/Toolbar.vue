@@ -1,6 +1,6 @@
 <template> <!--The code for global navigation!-->
+<v-container fluid class>
   <v-card>
-  
      <v-toolbar
       color="purple"
       black = "false"
@@ -46,6 +46,7 @@
     </v-tab-item>
     </v-tabs-items>
   </v-card>
+  </v-container>
 </template>
 
 <script>

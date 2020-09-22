@@ -6,7 +6,7 @@
       <v-row>
         <v-col
           cols="12"
-          sm="3"
+          sm="8"
           md="8"
           >
           <v-expansion-panels
@@ -21,7 +21,25 @@
               <v-expansion-panel-header><h2>ICU Beds</h2></v-expansion-panel-header>
               <v-expansion-panel-content>
                <h3> ICU rooms not available</h3>
-                <Autocomplete/>
+                <!--<Autocomplete/>!-->
+                <v-autocomplete
+                  :items="['Borivali', 'Malad']"
+                  :instant="['malad']"
+                  label="Enter your location"
+                  flat
+                  light
+                  clearable
+                  hide-no-data
+                  hide-details
+                  single
+                ></v-autocomplete>
+                <v-autocomplete
+                  :items="['Apex Multi-Speciality Hospitals', 'Karuna Hospital', 'National Hospitals']"
+                  :instant="['Malad community hospital', 'Thunga hospital']"
+                  label="Hospitals list"
+                  single
+                  ></v-autocomplete>
+                
               </v-expansion-panel-content>
             </v-expansion-panel>
         
@@ -47,7 +65,7 @@
         <v-col
           cols="12"
           md="4"
-          sm="1"
+          sm="4"
           > <!--A separte column for instant doc and helplie number!-->
           <v-card
             class="mx-auto"
