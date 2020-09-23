@@ -23,6 +23,7 @@
     <v-footer 
       absolute
       app
+      inset
       color="grey" 
       > 
       <!--<span class="white--text">&copy; {{ new Date().getFullYear() }}</span>!-->
