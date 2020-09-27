@@ -2,13 +2,15 @@
   <v-card>
       
      <v-toolbar
-      color="purple"
+      color="#711843"
       black="false"
       flat
       right
       extension
       >
-      <v-row>
+      <v-row
+        align-content-xl
+        >
         <v-col
           cols="12"
           md="6"
@@ -17,19 +19,20 @@
           >
           <v-card
             flat
-            color="purple"
+            color="#711843"
             class="ml-3 mt-7 mt-xs-5"
             >
             <Nlogo/> <!--The logo on the left!-->
           </v-card>
           <h5
-          class="d-none d-sm-block">Nanavati Hospital</h5> <!--the text 'Nanavati Hospital' after it!-->
+          class="d-none d-sm-block">Nanavati Hospital</h5> <!--The name 'Nanavati Hospital' is hidden on
+          devices smaller than sm-which means it is hidden in xs devices precisely!-->
         </v-col>
         <v-col
           cols="12"
           md="6"
           sm="8"
-          xs="10"
+          xs="5"
           class="d-flex"
           >
           <v-btn  group class="mt-md-10 mt-sm-10 "depressed small light>Book appointment</v-btn> <!--Button for book an appointment!-->
@@ -46,20 +49,20 @@
           
         </v-col>
       </v-row>
-
-        <!--<v-responsive
-            v-if="n === 2"
-            :key="`width-${n}`"
-            width="100%"
-          ></v-responsive>!-->
       
+
+      <!--Code for the tabs below(2nd line)!-->
+      <!--Here, in md the search text field is visible. But in sm only a search/magnify button is available.
+      In xs, the tabs are hidden, whereas the two buttons namely 'book an appointment' and 'quick enquiry' 
+      are only visible with the Nanavati logo !-->
       <template 
-        v-slot:extension> <!--Code for the tabs below(2nd line)!-->
+        v-slot:extension> 
         <v-tabs
           v-model="tab"
           align-with-title
-          class="d-none d-sm-block"
+          class="d-none d-sm-block" 
           >
+          <!-- 'd-none d-sm-block' to hide tabs in devices smaller than sm!-->
           <v-tabs-slider color="white"></v-tabs-slider>
           <v-spacer></v-spacer>
           
@@ -69,7 +72,9 @@
             {{ item }}
           </v-tab>
 
-          <div class="d-md-none"> <!--The search text field code!-->
+          <!--The code for the search/magnify button which is only visible on md devices
+           d-md-none is the display function which makes the search icon button visible only on md devices!-->
+          <div class="d-md-none"> 
             <v-btn
               retain-focus-on-click
               icon color="white"
@@ -78,8 +83,10 @@
               >
               <v-icon>mdi-magnify</v-icon>
             </v-btn>
+
+            <!--The search text field code!-->
           </div>
-          <div class="d-none d-md-block"> <!-- This command hides the search text field on small devices.The sodes works!-->
+          <div class="d-none d-md-block"> <!-- This command hides the search text field on small devices!-->
             <v-text-field
               append-icon="mdi-magnify"
               class="mx-sm-1"
