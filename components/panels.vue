@@ -1,4 +1,8 @@
 <template>
+<!-- The panels were originally meant to be buttons that behave like 
+tabs(in the XD deign). But afetr searching a lot, I realized I need to 
+use either tabs or buttons for this. I couldnt find medical icons in the
+veutify icon library.!--> 
   <div>
     <div class="d-flex">
     </div>
@@ -77,11 +81,17 @@
 
           </v-expansion-panels>
         </v-col>
+
+        <!--The cards 'instant doctor' and 'helpline number' were made responsive because although 
+        they are secondary tasks, they are critical part of this page . They needed to be placed such
+        that they dont disturb the primary function of this page. Hence, in md and sm devices they are placed 
+        besides the panels, but in xs devices they are placed after the panels.!-->
+
         <v-col
           cols="12"
           md="4"
           sm="4"
-          > <!--A separte column for instant doc and helpline number!-->
+          >  <!--A separte column for instant doc and helpline number!-->
           <v-card
             class="mx-auto"
             max-width="280"
