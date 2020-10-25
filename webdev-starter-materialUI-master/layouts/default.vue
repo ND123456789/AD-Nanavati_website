@@ -21,7 +21,7 @@
       absolute
       app
       inset
-      color="purple" 
+      color="#711843" 
       > 
       <!--<span class="white--text">&copy; {{ new Date().getFullYear() }}</span>!-->
       <v-container>

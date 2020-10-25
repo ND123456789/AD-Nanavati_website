@@ -2,8 +2,7 @@
   <v-card>
       
      <v-toolbar
-      color="#711843"
-      black="false"
+      color="white"
       flat
       right
       extension
@@ -35,14 +34,14 @@
           xs="5"
           class="d-flex"
           >
-          <v-btn  group class="mt-md-10 mt-sm-10 "depressed small light>Book appointment</v-btn> <!--Button for book an appointment!-->
+          <v-btn  group class="mt-md-10 mt-sm-10 "depressed small color="#711843" dark>Book appointment</v-btn> <!--Button for book an appointment!-->
           <v-btn class="mt-md-10 ml-3 mt-sm-10 ma-xs-auto" depressed small color="green">Quick Enquiry</v-btn>
           <div 
           class="d-none d-sm-block">
           <!--<caption>Patient portal</caption>!-->
           <v-btn 
           group
-          class="mt-md-10 mt-sm-10 ml-3 ma-xs-auto" x-small outlined color="white">Login</v-btn>
+          class="mt-md-10 mt-sm-10 ml-3 ma-xs-auto" x-small color="#711843">Login</v-btn>
           <v-btn class="mt-md-10 mt-sm-10 ma-xs-auto" x-small color="green">Register</v-btn> <!--Button for quick enquiry!-->
 
           </div>
@@ -58,12 +57,15 @@
       <template 
         v-slot:extension> 
         <v-tabs
-          v-model="tab"
+        v-model="tab"
+          background-color="transparent"
+          color="#711843"
           align-with-title
           class="d-none d-sm-block" 
+          dark
           >
           <!-- 'd-none d-sm-block' to hide tabs in devices smaller than sm!-->
-          <v-tabs-slider color="white"></v-tabs-slider>
+          <v-tabs-slider color="#711843"></v-tabs-slider>
           <v-spacer></v-spacer>
           
           <v-tab 
@@ -76,8 +78,9 @@
            d-md-none is the display function which makes the search icon button visible only on md devices!-->
           <div class="d-md-none"> 
             <v-btn
+              dark
               retain-focus-on-click
-              icon color="white"
+              icon color="#711843"
               depressed 
               class=" pa-0 mb-sm-6"
               >
@@ -88,6 +91,7 @@
           </div>
           <div class="d-none d-md-block"> <!-- This command hides the search text field on small devices!-->
             <v-text-field
+              color="#711843"
               append-icon="mdi-magnify"
               class="mx-sm-1"
               flat

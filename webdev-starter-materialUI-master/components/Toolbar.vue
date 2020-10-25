@@ -1,52 +1,103 @@
 <template> <!--The code for global navigation!-->
-<v-container fluid class>
   <v-card>
+      
      <v-toolbar
-      color="purple"
-      black = "false"
+      color="white"
       flat
       right
+      extension
       >
-      <Nlogo/><br> <!--The logo on the left!-->
-      <h3>Nanavati Hospital</h3> <!--the text 'Nanavati Hospital' after it!-->
-      <v-spacer></v-spacer>
-      <v-btn class='ma-2'depressed small light>Book appointment</v-btn> <!--Button for book an appointment!-->
-      <v-btn class='ma-2'depressed small color="green">Quick Enquiry</v-btn> <!--Button for quick enquiry!-->
-      <br>
-      <v-divider vertical> </v-divider> 
-      <h6> Patient portal</h6>
-       <v-btn class="ma-2" x-small tile color="purple" purple>Login</v-btn> <!--Button for login!-->
-       <v-btn class="ma-2" x-small color="green">Register</v-btn> <!--Button for register!-->
-      
-      
-      <template v-slot:extension> <!--Code for the tabs below(2nd line)!-->
-        <v-tabs
-          v-model="tab"
-          align-with-title
+      <v-row
+        align-content-xl
         >
-          <v-tabs-slider color="white"></v-tabs-slider>
+        <v-col
+          cols="12"
+          md="6"
+          sm="4"
+          xs="2"
+          >
+          <v-card
+            flat
+            color="#711843"
+            class="ml-3 mt-7 mt-xs-5"
+            >
+            <Nlogo/> <!--The logo on the left!-->
+          </v-card>
+          <h5
+          class="d-none d-sm-block">Nanavati Hospital</h5> <!--The name 'Nanavati Hospital' is hidden on
+          devices smaller than sm-which means it is hidden in xs devices precisely!-->
+        </v-col>
+        <v-col
+          cols="12"
+          md="6"
+          sm="8"
+          xs="5"
+          class="d-flex"
+          >
+          <v-btn  group class="mt-md-10 mt-sm-10 "depressed small color="#711843" dark>Book appointment</v-btn> <!--Button for book an appointment!-->
+          <v-btn class="mt-md-10 ml-3 mt-sm-10 ma-xs-auto" depressed small color="green">Quick Enquiry</v-btn>
+          <div 
+          class="d-none d-sm-block">
+          <!--<caption>Patient portal</caption>!-->
+          <v-btn 
+          group
+          class="mt-md-10 mt-sm-10 ml-3 ma-xs-auto" x-small color="#711843">Login</v-btn>
+          <v-btn class="mt-md-10 mt-sm-10 ma-xs-auto" x-small color="green">Register</v-btn> <!--Button for quick enquiry!-->
 
+          </div>
+          
+        </v-col>
+      </v-row>
+      
+
+      <!--Code for the tabs below(2nd line)!-->
+      <!--Here, in md the search text field is visible. But in sm only a search/magnify button is available.
+      In xs, the tabs are hidden, whereas the two buttons namely 'book an appointment' and 'quick enquiry' 
+      are only visible with the Nanavati logo !-->
+      <template 
+        v-slot:extension> 
+        <v-tabs
+        color="black">
+          <v-tab>Item One</v-tab>
+          <v-tab>Item Two</v-tab>
+          <v-tab>Item Three</v-tab>
+        </v-tabs>
+          <!-- 'd-none d-sm-block' to hide tabs in devices smaller than sm!-->
+          <v-tabs-slider color="#711843"></v-tabs-slider>
           <v-spacer></v-spacer>
-          <v-tab show-arrows v-for="item in items" :key="item">
-            {{ item }}
-            <v-tab-item
-        
-          </v-tab> <!--The search text field code!-->
+          
+
+          <!--The code for the search/magnify button which is only visible on md devices
+           d-md-none is the display function which makes the search icon button visible only on md devices!-->
+          <div class="d-md-none"> 
+            <v-btn
+              dark
+              retain-focus-on-click
+              icon color="#711843"
+              depressed 
+              class=" pa-0 mb-sm-6"
+              >
+              <v-icon>mdi-magnify</v-icon>
+            </v-btn>
+
+            <!--The search text field code!-->
+          </div>
+          <div class="d-none d-md-block"> <!-- This command hides the search text field on small devices!-->
             <v-text-field
+              color="#711843"
               append-icon="mdi-magnify"
-              class="mx-4"
+              class="mx-sm-1"
               flat
-              hide-details
+              hide-details="auto"
               label="Search"
               solo-inverted
             ></v-text-field>
-          </v-tabs>
+          </div>
+        </v-tabs>
       </template>
+    
     </v-toolbar>
-    </v-tab-item>
-    </v-tabs-items>
   </v-card>
-  </v-container>
 </template>
 
 <script>

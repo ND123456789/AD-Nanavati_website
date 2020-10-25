@@ -24,7 +24,7 @@ veutify icon library.!-->
             <v-expansion-panel> <!--panel for ICU beds!-->
               <v-expansion-panel-header><h2>ICU Beds</h2></v-expansion-panel-header>
               <v-expansion-panel-content>
-               <h3> ICU rooms not available</h3>
+               <h3 class="mt-5"> ICU rooms not available</h3>
 
                <!-- What i wanted is, when user enters Borivali in first text field, the second text field should show 
                the corresponding hospitals in Borivali. But is user enters Malad instead of Borivali, the second text field
@@ -64,9 +64,8 @@ veutify icon library.!-->
         
             <v-expansion-panel> <!--panel for Nanavati ambulance!-->
                 <v-expansion-panel-header><h2>Nanavati Ambulance Number</h2></v-expansion-panel-header>
-                <v-expansion-panel-content>
-                <v-btn large color="green">Call now</v-btn>
-                +91 9890834091
+                <v-expansion-panel-content >
+                <v-btn depressed class="mt-3 mr-3" large color="green" dark> Call Now </v-btn>
                 </v-expansion-panel-content>
               </v-expansion-panel>
 
@@ -95,23 +94,24 @@ veutify icon library.!-->
           <v-card
             class="mx-auto"
             max-width="280"
+            color="#711843"
             light
             single
+            outlined
             raised
             >
             <v-list-item three-line> 
               <v-list-item-content
               > <!--Card for instant doctor!-->
                 <v-list-item-title
-                
-                 class="headline mb-1"><b>Instant Doctor</b></v-list-item-title>
-                <v-list-item-subtitle>+91 937174902</v-list-item-subtitle>
+                 class="headline mb-1" ><b class="white--text">Instant Doctor</b></v-list-item-title>
+                <v-list-item-subtitle class="white--text">+91 937174902</v-list-item-subtitle>
               </v-list-item-content>
-              <v-icon x-large color="green darken-1">mdi-phone</v-icon>
+              <v-icon x-large color="white">mdi-phone</v-icon>
             </v-list-item>
 
             <v-card-actions>
-              <v-btn large color="green">Call now</v-btn>
+              <v-btn large color="white">Call now</v-btn>
             </v-card-actions>
             </v-card>
             <br></br>
@@ -121,6 +121,7 @@ veutify icon library.!-->
               light
               single
               outlined
+              raised
               >
               <v-list-item two-line>
                 <v-list-item-content> <!--card for helpline!-->
@@ -129,7 +130,7 @@ veutify icon library.!-->
                 </v-list-item-content>
               </v-list-item>
               <v-card-actions>
-              <v-btn text large color="green">Call now</v-btn>
+              <v-btn text large color="#711843">Call now</v-btn>
               </v-card-actions>
           </v-card>
         </v-col>
