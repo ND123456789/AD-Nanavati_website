@@ -9,6 +9,7 @@
       color="#711843"
       show-arrows
       light
+      raised
       >
    
       <v-tab>
