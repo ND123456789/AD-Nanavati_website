@@ -1,5 +1,5 @@
 {
-  "name": "AD-Nanavati_Website",
+  "name": "AD-Nanavati_website",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,8 +10,7 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "node-gyp": "^7.1.0",
-    "nuxt": "^2.14.5"
+    "nuxt": "^2.14.4"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.2",

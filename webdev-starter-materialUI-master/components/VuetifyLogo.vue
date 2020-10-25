@@ -2,13 +2,13 @@
   <img
     class="VuetifyLogo"
     alt="Vuetify Logo"
-    src="Logo.png"
+    src="vuetify-logo.svg"
   >
 </template>
 
 <style>
 .VuetifyLogo {
   height: 50px;
-  width: 40px;
+  width: 50px;
 }
 </style>
