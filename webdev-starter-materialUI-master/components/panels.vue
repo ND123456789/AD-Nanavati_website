@@ -62,7 +62,10 @@ veutify icon library.!-->
               </v-expansion-panel-content>
             </v-expansion-panel>
         
-            <v-expansion-panel> <!--panel for Nanavati ambulance!-->
+            <v-expansion-panel
+            hover
+            focusable
+            > <!--panel for Nanavati ambulance!-->
                 <v-expansion-panel-header><h2>Nanavati Ambulance Number</h2></v-expansion-panel-header>
                 <v-expansion-panel-content >
                 <v-btn depressed class="mt-3 mr-3" large color="green" dark> Call Now </v-btn>

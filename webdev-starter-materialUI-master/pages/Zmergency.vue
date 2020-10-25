@@ -2,15 +2,15 @@
   <div>
     <v-content>
       <Breadcrumbs/>
-      <v-card color="light grey">
-      <v-container fluid class="pa-13">
+      <v-card color="grey lighten-1">
+      <v-container fluid class="pa-13" >
           <v-row>
             <v-col 
               cols="12"
               sm="4"
               md="6"
               >
-              <h1>Emergency Services</h1>
+              <h1 class="font-weight-light">Emergency Services</h1>
             </v-col>
           </v-row>
         

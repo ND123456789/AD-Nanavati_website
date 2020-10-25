@@ -57,9 +57,10 @@
       <template 
         v-slot:extension> 
         <v-tabs
-        color="black">
-          <v-tab>Item One</v-tab>
-          <v-tab>Item Two</v-tab>
+        right
+        >
+          <v-tab>patient Portal</v-tab>
+          <v-tab>Intentioanl Patients</v-tab>
           <v-tab>Item Three</v-tab>
         </v-tabs>
           <!-- 'd-none d-sm-block' to hide tabs in devices smaller than sm!-->

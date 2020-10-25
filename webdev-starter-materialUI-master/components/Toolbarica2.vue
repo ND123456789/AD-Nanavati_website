@@ -2,10 +2,12 @@
   <v-card>
       
      <v-toolbar
-      color="white"
+      background-color="transparent"
+      color="#711843"
+      dark 
+      dense
       flat
-      right
-      extension
+
       >
       <v-row
         align-content-xl
@@ -34,8 +36,8 @@
           xs="5"
           class="d-flex"
           >
-          <v-btn  group class="mt-md-10 mt-sm-10 "depressed small color="#711843" dark>Book appointment</v-btn> <!--Button for book an appointment!-->
-          <v-btn class="mt-md-10 ml-3 mt-sm-10 ma-xs-auto" depressed small color="green">Quick Enquiry</v-btn>
+          <v-btn  group class="mt-md-10 mt-sm-10 "depressed small color="#711843" dark>Book appointment<v-icon> mdi-chevron-right</v-icon></v-btn> <!--Button for book an appointment!-->
+          <v-btn class="mt-md-10 ml-3 mt-sm-10 ma-xs-auto" depressed small color="green">Quick Enquiry <v-icon> mdi-chevron-right</v-icon></v-btn>
           <div 
           class="d-none d-sm-block">
           <!--<caption>Patient portal</caption>!-->
@@ -57,19 +59,18 @@
       <template 
         v-slot:extension> 
         <v-tabs
-        v-model="tab"
+          v-model="tab"
           background-color="transparent"
-          color="#711843"
           align-with-title
-          class="d-none d-sm-block" 
-          dark
+          color="white"
+          class="d-none d-sm-block"
+
           >
           <!-- 'd-none d-sm-block' to hide tabs in devices smaller than sm!-->
-          <v-tabs-slider color="#711843"></v-tabs-slider>
+          <v-tabs-slider color="white"></v-tabs-slider>
           <v-spacer></v-spacer>
           
           <v-tab 
-            class="mt-md-3 mt-sm-4" 
             show-arrows v-for="item in items" :key="item">
             {{ item }}
           </v-tab>
@@ -91,12 +92,13 @@
           </div>
           <div class="d-none d-md-block"> <!-- This command hides the search text field on small devices!-->
             <v-text-field
-              color="#711843"
+              color="grey"
               append-icon="mdi-magnify"
               class="mx-sm-1"
               flat
               hide-details="auto"
               label="Search"
+              dense
               solo-inverted
             ></v-text-field>
           </div>

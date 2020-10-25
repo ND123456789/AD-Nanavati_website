@@ -6,7 +6,8 @@
     <!--The tabs for 'do this panel!-->
     <v-tabs 
       vertical color="grey"
-      show-arrows>
+      show-arrows
+      >
    
       <v-tab>
         Breathlessness

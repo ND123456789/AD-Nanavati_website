@@ -2,7 +2,7 @@
   <div>
     <v-content>
       <v-container
-      color="grey lighten-2">
+        color="grey lighten-5">
         <v-row justify="left">
           <h2>Emergency Services</h2>
         </v-row>
