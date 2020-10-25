@@ -10,7 +10,7 @@
               sm="4"
               md="6"
               >
-              <h1 class="font-weight-light">Emergency Services</h1>
+              <h1 color="purple" class="font-weight-light">Emergency Services</h1>
             </v-col>
           </v-row>
         
