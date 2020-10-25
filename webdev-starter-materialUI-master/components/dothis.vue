@@ -1,12 +1,14 @@
 <template>
   <v-card>
-    <v-toolbar flat color="white" light>
-      <v-toolbar-title><h5>What is the patient suffering through?</h5></v-toolbar-title>
+    <v-toolbar flat color="#711843" light>
+      <v-toolbar-title><caption class="white--text">What is the patient suffering through?</caption></v-toolbar-title>
     </v-toolbar>
     <!--The tabs for 'do this panel!-->
     <v-tabs 
-      vertical color="grey"
+      vertical 
+      color="#711843"
       show-arrows
+      light
       >
    
       <v-tab>
@@ -27,7 +29,7 @@
 
 
       <v-tab-item>
-        <v-card flat>
+        <v-card >
           <v-card-text>
             <p>
               1. Relax the muscles in your neck and shoulders.<br>

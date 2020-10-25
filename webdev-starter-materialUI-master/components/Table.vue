@@ -1,3 +1,6 @@
+<!-- For the same task of location specific hospital,I tried using table. It wanted it to have 2 colummn.
+one which has the lists of location and the other column which has the list of the hospitals to that
+specific location. But it didnt work out since it showed an error.!-->
 <template>
   <div>
     <v-simple-table
@@ -13,7 +16,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="item in desserts" :key="item.name">
+          <tr v-for="item in Mytask" :key="item.name">
             <td>{{ item.name }}</td>
             <td>{{ item.hospitals }}</td>
           </tr>
@@ -55,26 +58,22 @@
       dense: false,
       fixedHeader: false,
       height: 300,
-      desserts: [
+      Mytask: [
         {
-          name: 'Dahisar',
+          name: 'Borivali',
           hospitals: 'Apex hospitals', 'Karuna',
         },
         {
           name: 'Goregaon',
-          hospitals: 237,
+          hospitals: 'SRV hospitals', 'Sujay hospital',
         },
         {
           name: 'Malad',
-          hospitals: 262,
-        },
-        {
-          name: 'Borivali',
-          hospitals: 305,
+          hospitals: 'Suvarna Hospitals', 'Malad society hospital',
         },
         {
           name: 'Andheri',
-          ho: 356,
+          hospitals: 'Seven hills Hospitals',
         },
         
       ],
