@@ -8,7 +8,7 @@
           <v-toolbar-title>Nanavati</v-toolbar-title>
        <!-- Component Example -->
                 
-     <Toolbarica2/>         
+     <Toolbar/>         
     <!-- Body -->
     <v-content light>
       <chatbot/>
