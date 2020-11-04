@@ -20,8 +20,7 @@ veutify icon library.!-->
             tile
             single
             >
-
-            <v-expansion-panel> <!--panel for ICU beds!-->
+            <v-expansion-panel > <!--panel for ICU beds!-->
               <v-expansion-panel-header elevation="2"><h2>ICU Beds</h2></v-expansion-panel-header>
               <v-expansion-panel-content>
                <h3 class="mt-5"> ICU rooms not available</h3>
