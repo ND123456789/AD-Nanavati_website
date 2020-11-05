@@ -26,8 +26,8 @@ patch in the middle of the site. Hence, I decide to keep them white. !-->
             >
             <v-expansion-panel > <!--panel for ICU beds!-->
               <v-expansion-panel-header color="grey lighten-3"><h2>ICU Beds</h2></v-expansion-panel-header>
-              <v-expansion-panel-content>
-               <h3 class="mt-5"> ICU rooms not available</h3>
+              <v-expansion-panel-content class="red--text">
+               <h2 class="mt-5"> ICU rooms not available</h2>
 
                 <!-- Selectlocation enables users to select a specific location. Whereas, selecthospital enables users
                 to selct a hospital from a list of hospitals belonging to a specific hospital!-->                
