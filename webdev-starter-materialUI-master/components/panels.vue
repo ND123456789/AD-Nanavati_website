@@ -2,7 +2,11 @@
 <!-- The panels were originally meant to be buttons that behave like 
 tabs(in the XD deign). But afetr searching a lot, I realized I need to 
 use either tabs or buttons for this. I couldnt find medical icons in the
-veutify icon library.!--> 
+veutify icon library. So, i made those icons in illustrator and tried to
+put icons in panels, but that didnt work. Also, the colour of the panels is 
+white whereas, in XD design its of the brand's colour. This is because, it 
+was looking unpleasant and dsturbing (on the site).It looked like a big dark 
+patch in the middle of the site. Hence, I decide to keep them white. !--> 
   <div>
     <div class="d-flex">
     </div>
@@ -21,7 +25,7 @@ veutify icon library.!-->
             single
             >
             <v-expansion-panel > <!--panel for ICU beds!-->
-              <v-expansion-panel-header elevation="2"><h2>ICU Beds</h2></v-expansion-panel-header>
+              <v-expansion-panel-header color="grey lighten-3"><h2>ICU Beds</h2></v-expansion-panel-header>
               <v-expansion-panel-content>
                <h3 class="mt-5"> ICU rooms not available</h3>
 
@@ -32,18 +36,21 @@ veutify icon library.!-->
                 
               </v-expansion-panel-content>
             </v-expansion-panel>
-        
+
+            <!-- In an emergency situation, the user must quickly get what he wants. Hence to I have
+            used hover and focusabe to help users make quick decisions and convey accurate information
+            very quickly!-->
             <v-expansion-panel
               hover
               focusable> <!--panel for Nanavati ambulance!-->
-              <v-expansion-panel-header><h2>Nanavati Ambulance Number</h2></v-expansion-panel-header>
+              <v-expansion-panel-header ><h2>Nanavati Ambulance Number</h2></v-expansion-panel-header>
               <v-expansion-panel-content >
               <v-btn elevation="5" class="mt-3 mr-3" large color="green" dark> Call Now </v-btn>
               </v-expansion-panel-content>
             </v-expansion-panel>
 
             <v-expansion-panel> <!--panel for do this in emeergency!-->
-              <v-expansion-panel-header><h2>Do this in emergency</h2></v-expansion-panel-header>
+              <v-expansion-panel-header color="grey lighten-3"><h2>Do this in emergency</h2></v-expansion-panel-header>
               <v-expansion-panel-content>
               <br> </br>
                <!--<Autocomplete2/>!-->
